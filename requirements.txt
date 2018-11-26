@@ -1,0 +1,4 @@
+matplotlib
+binance
+requests
+python-binance
