@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>arbs</title>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename = 'js/socket_handler.js') }}"></script>
+        </script>
+    </head>
+    <body>
+        <ul>
+            {% for ticker in tickers %}
+            <li> {{ ticker }} : {{tickers[ticker][0] }} </li>
+            {% endfor %}
+        </ul>
+
+        <div id="log"></div>
+    </body>
+</html>
