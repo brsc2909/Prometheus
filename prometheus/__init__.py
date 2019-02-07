@@ -22,3 +22,8 @@ def configs():
 
 BINANCE_KEY = configs().get('BINANCE', 'api_key')
 BINANCE_SECRET = configs().get('BINANCE', 'api_secret')
+PORT = configs().get('WEBAPP', 'port')
+
+GDAX_KEY = configs().get('GDAX', 'api_key')
+GDAX_SECRET = configs().get('GDAX', 'api_secret')
+GDAX_PASSPHRASE = configs().get('GDAX', 'api_passphrase')

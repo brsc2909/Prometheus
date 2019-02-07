@@ -26,6 +26,7 @@ class Arbs(object):
         else:
             return 1 / self.pairs[reverse][1]
 
+    # TODO these functions arb[3-5] can probably be reduced to just one function but for now it works
     def arb5(self, spend, base, symbols):
         calc = self.trade_price
 
